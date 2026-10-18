@@ -1,3 +1,4 @@
+name: nextjs-web-app-flow
 on:
   push:
     branches:
