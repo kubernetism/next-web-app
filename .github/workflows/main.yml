@@ -8,3 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is Simple Github Actions Workflow----"
+      - run: sudo apt install update && apt install git && git clone git@github.com:kubernetism/next-web-app.git
+      - run: echo "Git Clone Complete"
