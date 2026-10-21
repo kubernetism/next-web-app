@@ -4,12 +4,18 @@ on:
     branches:
       - main
 jobs:
-  say_hello_in_bash:
+  say-hello-in-bash:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "BASH: hello_world from bash"
-  say_hello_from_python:
+      - run: echo "Hello World of Bash"
+  say-hello-world-from-python:
     runs-on: ubuntu-latest
     steps:
       - run: print("hello_world in Python Scirpt")
-      - shell: python
+        shell: python
+  say-hello-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/next-web-app
+        with:
+          who-to-greet: "Hello Real World"
