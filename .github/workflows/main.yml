@@ -4,9 +4,12 @@ on:
     branches:
       - main
 jobs:
-  deploy:
+  say_hello_in_bash:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is Simple Github Actions Workflow----"
-      - run: sudo apt install update && apt install git && git clone git@github.com:kubernetism/next-web-app.git
-      - run: echo "Git Clone Complete"
+      - run: echo "BASH: hello_world from bash"
+  say_hello_from_python:
+    runs-on: ubuntu-latest
+    steps:
+      - run: print("hello_world in Python Scirpt")
+      - shell: python
